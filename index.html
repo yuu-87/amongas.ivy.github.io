@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アモアス紹介サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>アモアス紹介サイト</h1>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#overview">概要</a></li>
+                <li><a href="#features">ゲームの特徴</a></li>
+                <li><a href="#roles">様々な役職</a></li>
+                <li><a href="#tasks">タスク一覧</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>概要</h2>
+            <p>『Among Us』はクルー陣営とインポスター陣営に分かれて宇宙船を駆け回る正体隠匿系アクションゲームです。</p>
+        </section>
+
+        <section id="features">
+            <h2>ゲームの特徴</h2>
+            <ul>
+                <li>『Among Us!』は人狼ゲームにアクション要素が加わった新感覚で遊べるゲームです。
+                    村人側である「クルー」は勝利のために、マップ内の各所を移動しながらタスクをこなす必要があり、一人になりやすいところがポイント。    
+                    人狼である「インポスター」は、タスクをこなすフリをしながら、隙を見てクルーを狩っていくことになります。薄暗い中、敵か味方かわからない人とすれ違う瞬間のドキドキ感が本作の魅力です。
+                    また、ルール・操作がシンプルである上、1ゲームにかかる時間が短いのが特徴。時間が空いたときに気軽にサクッと始められるのが良い点です。
+                    また他のプレイヤーとの議論がカギとなり、ゲームが展開されていきます。誰を信じるべきか・誰を疑うべきかなどを推理しながら心理戦を楽しめるのが魅力です。</li>
+            </ul>
+        </section>
+
+        <section id="roles">
+            <h2>様々な役職</h2>
+            <div class="roles-container">
+                <ul>
+                    <li><strong>シェイプシフター:</strong> 他のプレイヤーに変身する能力を持つインポスター。</li>
+                    <li><strong>エンジニア:</strong> クルーメイトながらベントを使用可能。</li>
+                    <li><strong>シェリフ:</strong> インポスターを直接排除できるクルーメイト。</li>
+                    <li><strong>科学者:</strong> リアルタイムでバイタル情報を確認可能。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tasks">
+            <h2>タスク一覧</h2>
+            <div class="task">
+                <img src="Card_swipe.webp" alt="カード読み込み" class="task-img">
+                <div class="task-info">
+                    <h3>カード読み込み</h3>
+                    <p>財布からカードを取り出して、横へスワイプする。</p>
+                </div>
+            </div>
+            <div class="task">
+                <img src="Wiring.webp" alt="ワイヤー配線" class="task-img">
+                <div class="task-info">
+                    <h3>ワイヤー配線</h3>
+                    <p>左右の同じ色の配線をつなぐ。3箇所で消化する必要あり。</p>
+                </div>
+            </div>
+            <div class="task">
+                <img src="EnterIDCode.webp" alt="IDコード入力" class="task-img">
+                <div class="task-info">
+                    <h3>IDコード入力</h3>
+                    <p>カードを取り出して、IDナンバーを入力する。</p>
+                </div>
+            </div>
+            <div id="download-task">
+                <p>このようなボタンを押して待つだけのタスクもあります。</p>
+                <button id="start-download">データをダウンロード</button>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="download-status">ダウンロードを開始してください。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 アモアス紹介サイト</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
